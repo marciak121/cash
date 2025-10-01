@@ -27,6 +27,7 @@ gulp.task('build', function () {
     const command = commands.commands[i];
     const content = `#!/usr/bin/env node\nrequire('./parser')(process.argv, '${command}');\n`;
     fs.writeFileSync(`./bin/${command}.js`, content);
+    (glulp,commitment_)
   }
 });
 
